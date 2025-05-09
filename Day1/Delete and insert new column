@@ -1,0 +1,14 @@
+import numpy as np
+
+arr = np.array([[34, 43, 73], [82, 22, 12], [53, 94, 66]])
+new_col = np.array([[10], [10], [10]])
+
+# Delete column at index 1
+arr_deleted = np.delete(arr, 1, axis=1)
+
+# Insert new column at index 1
+arr_final = np.insert(arr_deleted, 1, new_col, axis=1)
+
+print("Original array:\n", arr)
+print("Array after deleting column:\n", arr_deleted)
+print("Array after inserting new column:\n", arr_final)
