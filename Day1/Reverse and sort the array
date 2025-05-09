@@ -1,0 +1,10 @@
+arr = [22, 45, 11, 23, 51, 48]
+
+# Reverse
+reversed_arr = arr[::-1]
+
+# Sort
+sorted_arr = sorted(reversed_arr)
+
+print("Reversed:", reversed_arr)
+print("Sorted:", sorted_arr)
